@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbaubg"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ic_launcher_background"
+    android:id="@+id/title_bar_layout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_title"
+        android:text="BBAU"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+<ImageButton
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:id="@+id/menu_btn"
+    android:src="@drawable/baseline_menu_24"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:backgroundTint="@color/ic_launcher_background"
+    android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="115dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/bbau_hindi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="बाबासाहेब भीमराव अम्बेडकर विश्वविद्यालय"
+        android:textSize="18dp"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/bbau_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Babasaheb Bhimrao Ambedkar University"
+        android:textSize="16dp"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:layout_below="@id/bbau_hindi"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/bbau_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="( A Central University )"
+        android:textSize="12dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textStyle="bold"
+        android:layout_below="@id/bbau_english"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/bbau_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accredited 'A++' Grade by NAAC (2023)"
+        android:textSize="12dp"
+        android:textColor="#800000"
+        android:textStyle="bold"
+        android:layout_below="@id/bbau_heading"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/bbau_crt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ISO 14001:2015"
+        android:textSize="12dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textStyle="bold"
+        android:layout_below="@id/bbau_credit"
+        android:textAlignment="center" />
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/pdf_btn"
+        android:layout_below="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:text="BCA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/ic_launcher_background"
+        android:textAlignment="center"
+        android:paddingVertical="10dp"
+        android:layout_marginVertical="20dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/pdf_btn2"
+        android:layout_below="@+id/pdf_btn"
+        android:layout_centerHorizontal="true"
+        android:text="B.Sc IT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/ic_launcher_background"
+        android:textAlignment="center"
+        android:paddingVertical="10dp"/>
+
+    <Button
+        android:id="@+id/bbau_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pdf_btn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="329dp"
+        android:text=" Go To Website"
+        android:paddingVertical="5dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
